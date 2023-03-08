@@ -1,13 +1,56 @@
-body {
+*, *:before, *:after{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
+:root{
+  --color-overlay: rgba(33, 30, 27, .6);
+  --color-light-bg: #2E2925;
+  --color-dark-bg: #211E1B;
+  --color-secondary: #F1B356;
+  --color-light-text: #CCC4BC;
+  --color-dark-text: #8A837D;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  --container-width-lg: 80%;
+  --container-width-md: 90%;
+
+  --transition: all .3s ease-in-out;
+}
+html{
+  font-size: 10px;
+}
+body{
+  font-family: 'Crimson Text', serif;
+  font-size: 1.2rem;
+}
+h1, h2, h3, h4 {
+  font-family: 'Merriweather', serif;
+}
+.container{
+  width: var(--container-width-md);
+  max-width: 1920px;
+  margin-inline: auto;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.btn{
+  background-color: var(--color-secondary);
+  border: none;
+  outline: none;
+  font-family: 'Crimson Text', serif;
+  border-radius: 2rem;
+  padding: .5rem 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn:hover{
+  filter:brightness(120%);
+}
+@media screen and (min-width: 764px){
+  
 }
