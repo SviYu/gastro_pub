@@ -1,15 +1,17 @@
-nav{
+.nav{
     display: grid;
     place-items: center;
     width: 100vw;
     height: 6rem;
-    background-color: var(--color-overlay) ;
-    position: fixed;
-    top: 0;
-    left: 0;
     z-index: 10;
     font-family: 'Merriweather', serif;
     position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.nav.active{
+    background-color: var(--color-overlay);
 }
 .nav-container{
     display: flex;
@@ -19,6 +21,8 @@ nav{
 .navbar-logo{
     width: 3rem;
     height: 3rem;
+}
+.navbar-logo g{
     fill: #fff;
 }
 .nav-links{
@@ -141,6 +145,10 @@ nav{
     width: fit-content;
 }
 @media screen and (min-width: 764px){ 
+    .navbar-logo {
+        width: 5rem;
+        height: 5rem;
+    }
     .nav-toggle-btn{
         display: none;
     }

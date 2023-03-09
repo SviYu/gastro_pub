@@ -7,31 +7,19 @@ import { FaInstagram } from 'react-icons/fa'
 import './footer.css'
 
 const Footer = () => {
-  const [addressInfo, setAddressInfo] = useState([]);
-  const [telInfo, setTelInfo] = useState([]);
+/*   const [addressInfo, setAddressInfo] = useState([]);
+  const [telInfo, setTelInfo] = useState([]); */
+
+  const [footerInfo, setFooterInfo] = useState([]);
 
   useEffect(() => {
-    function getAddress(id) {
-      fetch('https://gastropub.webexam-mcdm.dk/api/texts')
-        .then(response => response.json())
-        .then(data => {
-          setAddressInfo(data[id].description);
-        })
-        .catch(err => console.log(err.message))
-      }
-    getAddress(9);
-  }, [])
-
-  useEffect(() => {
-    function getTel(id) {
-      fetch('https://gastropub.webexam-mcdm.dk/api/texts')
-        .then(response => response.json())
-        .then(data => {
-          setTelInfo(data[id].description);
-        })
-        .catch(err => console.log(err.message))
-      }
-    getTel(10);
+    fetch('https://gastropub.webexam-mcdm.dk/api/texts')
+      .then(response => response.json())
+      .then(data => {
+        /* console.log(data) */
+        setFooterInfo(data)
+      })
+    .catch(err => console.log('Error', err.message))
   }, [])
 
   return (
@@ -45,12 +33,28 @@ const Footer = () => {
           <div className='footer-container contact-container'>
             <h3>Kontakt</h3>
               <p>
-                <span><FaMapMarkerAlt /></span>
-                {addressInfo}
+                <span><FaMapMarkerAlt /></span>            
+                {footerInfo.map(footerItem => {
+
+                  return (
+                    <span key={footerItem.id}>{
+                      footerItem.name === 'Footer-txt-Adr' ? footerItem.description : ''
+                    }</span>
+                  ) 
+                })}
+            
+
               </p>
             <p>
-              <span><BsTelephoneFill /></span>
-              {telInfo}
+            <span><BsTelephoneFill /></span>
+              {footerInfo.map(footerItem => {
+
+                    return (
+                      <span key={footerItem.id}>{
+                        footerItem.name === 'Footer-text-Tlf' ? footerItem.description : ''
+                      }</span>
+                    ) 
+                  })}
             </p>
           </div>
 

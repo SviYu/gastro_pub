@@ -1,0 +1,79 @@
+.front-page{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.front-page-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-overlay);
+    z-index: 3;
+}
+/* SECTIONS */
+.front-page-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.front-page-section-bg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.front-page-section-container{
+    position: absolute;
+    top: 30%;
+    width: 90%;
+    margin: 0 5%;
+    color: #fff;
+    z-index: 4;
+}
+.front-page-section-title{
+    font-size: 5rem;
+}
+.front-page-section-text{
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    max-width: 40rem;
+}
+.front-page-section-btn{
+    color: #fff;
+}
+/* Go-To */
+.go-to-top a{
+    color: #fff;
+    background-color: var(--color-overlay);
+    display: grid;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 3rem;
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    z-index: 4;
+}
+@media screen and (min-width: 764px){
+    .front-page-section-title{
+       font-size: 7rem;
+    }
+    .front-page-section-text{
+        font-size: 1.6rem;
+    }
+}
+@media screen and (min-width: 1200px){
+    .front-page-section-container{
+        width: 80%;
+        margin: 0 10%;
+    }
+    .front-page-section-title {
+        font-size: 8.5rem;
+    }
+    .front-page-section-text {
+        font-size: 1.8rem;
+    }
+}

@@ -1,32 +1,39 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import logo from '../../images/gastro-pub.svg'
+import {ReactComponent as Logo} from '../../images/gastro-pub.svg'
 import { links } from '../../data'
 import {MdOutlineClose} from 'react-icons/md'
 import {GoTriangleDown} from 'react-icons/go'
 import { GoThreeBars } from 'react-icons/go'
 import './navbar.css'
 import BookingForm from '../BookingForm'
-
+ 
 const Navbar = () => {
+    const [navbar, setNavbar] = useState(false)
     const [navShowing, setNavShowing] = useState(false);
     const [subnavShowing, setSubNavShowing] = useState(false);
     const [openModal, setOpenModal] = useState(false);
     const handleOpen = () => setOpenModal(true);
     const handleClose = () => setOpenModal(false);
 
+    const changeBackground = () => {
+        window.scrollY >= 60 ? setNavbar(true) : setNavbar(false)
+    }
+
+    useEffect(() => {
+        changeBackground()
+        window.addEventListener('scroll', changeBackground)
+    })
+
   return (
-    <nav>
+    <nav className={navbar ? 'nav active' : 'nav'}>
           <div className="container nav-container">
               <Link to="/" className='logo'>
-                  <img src={logo}
-                      className="navbar-logo"
-                      onClick={() => {
+                  <Logo className="navbar-logo" onClick={() => {
                           setNavShowing(false);
                           setSubNavShowing(false)
-                       }}
-                      
-                      alt="Navbar Logo" />
+                          
+                      }}/>
               </Link>
               <ul className={`nav-links ${navShowing ? 'show-nav' : 'hide-nav'}`}>
                   {
