@@ -11,6 +11,7 @@ const About = () => {
     <>
       <Header title="Om GastroPub" image={image} />
       <AboutSection />
+      
       <div className="go-to-top">
         <a href='#top'><BsChevronUp /></a>
       </div>

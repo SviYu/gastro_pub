@@ -56,6 +56,10 @@
     right: 3rem;
     bottom: 3rem;
     z-index: 4;
+    transition: var(--transition);
+}
+.go-to-top a:hover{
+    background-color: #000;
 }
 @media screen and (min-width: 764px){
     .front-page-section-title{

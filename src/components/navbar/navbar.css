@@ -129,7 +129,9 @@
     margin-bottom: 2rem;
     font-size: 1.6rem;
 }
-input, textarea{
+input[type="text"], 
+input[type="number"], 
+textarea{
     outline: none;
     border: none;
     border-radius: 1.5rem;

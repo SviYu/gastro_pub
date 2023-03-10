@@ -27,8 +27,15 @@ const AboutSection = () => {
               </p>
           </div>
           <div className="about-right">
-              <img className='about-right-img' src={imageOne } alt="Restaurant" />
-              <img className='about-right-img' src={imageTwo } alt="Restaurant" />
+              
+            <div className="about-right-image">
+                <img className='about-right-img' src={imageOne } alt="Restaurant" />
+            </div>
+            <div className="about-right-image">
+                <img className='about-right-img' src={imageTwo } alt="Restaurant" />
+            </div>
+
+              
           </div>
       </section>
   )

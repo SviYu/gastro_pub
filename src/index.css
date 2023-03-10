@@ -25,7 +25,7 @@ body{
   font-size: 1.2rem;
   background-color: var(--color-light-bg);
 }
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: 'Merriweather', serif;
 }
 .container{
@@ -49,6 +49,7 @@ a{
   font-weight: 700;
   cursor: pointer;
   transition: var(--transition);
+  width: fit-content;
 }
 .btn:hover{
   filter:brightness(85%);
