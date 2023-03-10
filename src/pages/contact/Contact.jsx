@@ -1,32 +1,15 @@
 import React, { useEffect, useState } from 'react'
+import ContactBody from '../../components/ContactBody';
 import Header from '../../components/Header'
+import './contact.css'
+import imageBg from '../../images/Contact-bg.jpg'
 
 const Contact = () => {
-  const [headerImg, setHeaderImg] = useState([]);
-
-  useEffect(() => {
-    fetch('https://gastropub.webexam-mcdm.dk/api/images')
-      .then(response => response.json())
-      .then(response => {
-        console.log(response)
-        setHeaderImg(response)
-      })
-    .catch(err => console.log(err.message))
-  }, [])
-
   
   return (
     <>
-      <Header title="Kontakt">
-
-        {headerImg.map((img) => {
-          
-          return <img src={img.id} alt='Interior' key={img.id}/>
-        })}
-
-      </Header>
-
-      <section></section>
+      <Header title="Kontakt" image={imageBg }/>
+      <ContactBody/>
     </>
   )
 }

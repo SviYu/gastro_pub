@@ -5,7 +5,6 @@ import foodImg from '../../images/mainSite-food.jpg'
 import interiorImg from '../../images/mainSite-interior.jpg'
 import { BsChevronUp } from 'react-icons/bs'
 import './home.css'
-import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (

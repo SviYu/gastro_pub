@@ -1,0 +1,88 @@
+.contact-section{
+    color: #fff;
+    padding: 6rem 0;
+}
+.contact-left{
+    position: relative;
+}
+.contact-left h4{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.contact-left,
+.contact-right{
+    max-width: 60rem;
+}
+.contact-left p{
+    text-align: justify;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+}
+.contact-right{
+    margin-top: 5rem;
+    line-height: 1;
+    font-family: 'Merriweather', serif;
+    font-size: 1.6rem;
+}
+.contact-right-block{
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+}
+.contact-right-block span{
+   font-size: 2.5rem;
+   color: var(--color-secondary);
+   margin-right: 1.5rem;
+}
+.sub-text{
+    display: block;
+    font-size: 1.2rem;
+    margin-top: .5rem;
+}
+.err-txt p{
+    color: red;
+    margin: -1.5rem 0 1.5rem;
+}
+.answer-block{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-secondary);
+    color: var(--color-dark-bg);
+    text-align: center;
+    display: grid;
+    place-items: center;
+    padding-inline: 2rem
+}
+@media screen and (min-width: 764px){
+    .contact-section-wrapper{
+        display: flex;
+    }
+    .contact-left,
+    .contact-right{
+        width: 45%;
+        margin: 0 auto;
+    }
+    .contact-left h4{
+        text-align: left;
+        font-size: 2.5rem;
+    }
+    .contact-left p,
+    .contact-right{
+        font-size: 2rem;
+    }
+    .contact-right-block span{
+        font-size: 3.5rem;
+    }
+    .sub-text{
+        font-size: 1.6rem;
+        margin-top: 1rem;
+    }
+}

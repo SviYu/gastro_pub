@@ -1,0 +1,72 @@
+.menu-container{
+    padding-top: 8rem;
+    color: #fff;
+}
+.menu-container-wrapper{
+    padding-bottom: 6rem;
+}
+.menu-img{
+    width: 60%;
+    margin-inline: 20%;
+    margin-bottom: 3rem;
+}
+.menu-content-title{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.menu-content-item{
+    border-top: 1px solid var(--color-light-text);
+    padding: 2rem 0;
+}
+.menu-content-item:last-child{
+    border-bottom: 1px solid var(--color-light-text);
+}
+.dish-name{
+    font-size: 1.8rem;
+}
+.dish-ingredients{
+    margin-top: .5rem;
+    color: var(--color-light-text);
+    font-size: 1.4rem;
+}
+.dish-price{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+@media screen and (min-width: 764px){
+    .menu-content-item{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .menu-content-title{
+        font-size: 4.8rem;
+    }
+    .dish-name {
+        font-size: 2.2rem;
+    }
+    .dish-ingredients {
+        font-size: 1.8rem;
+    }
+    .dish-price{
+        margin: 0;
+    }
+}
+@media screen and (min-width: 1024px){
+    .menu-container-wrapper{
+        display: flex;
+    }
+    .menu-content{
+        width: 75%;
+        margin-left: 5%;
+    }
+    .menu-img{
+        width: 20%;
+        margin: auto;
+    }
+    .menu-content-title{
+        text-align: left;
+    }
+}

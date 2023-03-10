@@ -120,12 +120,16 @@
     right: 0;
     font-size: 4rem;
     cursor: pointer;
+    transition: var(--transition);
+}
+.booking-form svg:hover{
+    color: var(--color-dark-text);
 }
 .booking-title{
     margin-bottom: 2rem;
     font-size: 1.6rem;
 }
-.booking-form input, textarea{
+input, textarea{
     outline: none;
     border: none;
     border-radius: 1.5rem;

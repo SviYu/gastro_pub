@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { FaMapMarkerAlt} from 'react-icons/fa'
 import { BsTelephoneFill} from 'react-icons/bs'
 import { FaFacebookF} from 'react-icons/fa'
@@ -7,21 +7,6 @@ import { FaInstagram } from 'react-icons/fa'
 import './footer.css'
 
 const Footer = () => {
-/*   const [addressInfo, setAddressInfo] = useState([]);
-  const [telInfo, setTelInfo] = useState([]); */
-
-  const [footerInfo, setFooterInfo] = useState([]);
-
-  useEffect(() => {
-    fetch('https://gastropub.webexam-mcdm.dk/api/texts')
-      .then(response => response.json())
-      .then(data => {
-        /* console.log(data) */
-        setFooterInfo(data)
-      })
-    .catch(err => console.log('Error', err.message))
-  }, [])
-
   return (
     <footer className='footer'>
       <div className="wrapper container">
@@ -33,28 +18,12 @@ const Footer = () => {
           <div className='footer-container contact-container'>
             <h3>Kontakt</h3>
               <p>
-                <span><FaMapMarkerAlt /></span>            
-                {footerInfo.map(footerItem => {
-
-                  return (
-                    <span key={footerItem.id}>{
-                      footerItem.name === 'Footer-txt-Adr' ? footerItem.description : ''
-                    }</span>
-                  ) 
-                })}
-            
-
+                <span><FaMapMarkerAlt /></span>    
+                Valhallavej 23, 8800 Viborg
               </p>
             <p>
-            <span><BsTelephoneFill /></span>
-              {footerInfo.map(footerItem => {
-
-                    return (
-                      <span key={footerItem.id}>{
-                        footerItem.name === 'Footer-text-Tlf' ? footerItem.description : ''
-                      }</span>
-                    ) 
-                  })}
+              <span><BsTelephoneFill /></span>
+              +45 12 34 56
             </p>
           </div>
 

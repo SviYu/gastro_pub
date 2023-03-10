@@ -71,7 +71,10 @@ const Navbar = () => {
                                                         <div className='sub-menu' key={idx}>
                                                             <NavLink to={sublink.path}
                                                                 className={({ isActive }) => isActive ? "active-nav-link" : "sub-nav-link"}
-                                                                onClick={() => setSubNavShowing(prev => !prev)}>
+                                                                onClick={() => {
+                                                                    setNavShowing(false)
+                                                                    setSubNavShowing(prev => !prev)
+                                                                }}>
                                                                 {sublink.name}
                                                             </NavLink>
                                                         </div>
