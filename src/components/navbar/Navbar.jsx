@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <nav className={navbar ? 'nav active' : 'nav'}>
           <div className="container nav-container">
-              <Link to="/" className='logo'>
+              <Link to="/gastro_pub" className='logo'>
                   <Logo className="navbar-logo" onClick={() => {
                           setNavShowing(false);
                           setSubNavShowing(false)
