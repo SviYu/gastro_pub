@@ -1,0 +1,113 @@
+/* Chef Section */
+.chef-section{
+    padding: 7rem 0 5rem;
+    background-color: var(--color-dark-bg);
+    color: #fff;
+}
+
+.chef-section-title {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+}
+.chef-section-text{
+    color: var(--color-light-text);
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+.chef-image{
+    width: 100%;
+    margin-top: 5rem;
+}
+
+/* Team section */
+.team-wrapper{
+    padding: 0 0 7rem;
+    text-align: center;
+}
+.team-container{
+    margin-top: 7rem;
+    display: grid;
+    place-items: center;
+    max-width: 30rem;
+    margin-inline: auto;
+}
+.team-container:hover .team-avatar{
+    transform: scale(1.1);
+    filter: brightness(100%);
+}
+.team-avatar-container{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.team-avatar{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    filter: brightness(70%);
+    transition: var(--transition);
+}
+.team-name{
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+.team-position{
+    color: var(--color-dark-text);
+    font-family: 'Crimson Text', serif;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+.team-about{
+    color: var(--color-light-text);
+    font-size: 1.8rem;
+}
+
+@media screen and (min-width: 764px) {
+    /* Chef */
+    .chef-section-title
+     {
+        font-size: 4.8rem;
+    }
+    .chef-section-wrapper{
+        display: flex;
+    }
+    .chef-section-left{
+        width: 50%;
+    }
+    .chef-section-right{
+        width: 45%;
+        margin-left:5%;
+        display: grid;
+        place-items: center;
+    }
+    .chef-image {
+        max-width: 45rem;
+        margin-top:0;
+    }
+
+    /* Team */
+    .team-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(30rem, 1fr));
+    }
+    .team-container{
+        max-width: 40rem;
+        padding: 2rem;
+    }
+}
+@media screen and (min-width: 1200px){
+    .team-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+    .team-container{
+        min-width: 27rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}

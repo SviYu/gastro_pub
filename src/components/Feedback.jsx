@@ -1,5 +1,5 @@
 import React from 'react'
-import { feedbacks } from '../feedbacks'
+import { feedbacks } from '../data'
 import {BsClock} from 'react-icons/bs'
 import {TiMessages} from 'react-icons/ti'
 

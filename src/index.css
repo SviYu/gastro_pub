@@ -24,6 +24,7 @@ body{
   font-family: 'Crimson Text', serif;
   font-size: 1.2rem;
   background-color: var(--color-light-bg);
+  overflow-x: hidden;
 }
 h1, h2, h3, h4, h5 {
   font-family: 'Merriweather', serif;
@@ -38,6 +39,10 @@ li{
 }
 a{
   text-decoration: none;
+  cursor: pointer;
+}
+a:hover{
+  cursor: pointer;
 }
 .btn{
   background-color: var(--color-secondary);

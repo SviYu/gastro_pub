@@ -1,10 +1,16 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import { BsTelephoneFill} from 'react-icons/bs'
 import { BsClock} from 'react-icons/bs'
 import { useForm } from 'react-hook-form'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ContactBody = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     const {
         register,
         formState: { errors },
@@ -35,8 +41,6 @@ const ContactBody = () => {
             </div>
         )
 
-
-
         fetch('https://gastropub.webmcdm.dk/contacts', {
             method: 'POST',
             body: JSON.stringify(dataToSubmit),
@@ -52,7 +56,7 @@ const ContactBody = () => {
     }
 
   return (
-      <section className='contact-section'>
+      <section className='contact-section' data-aos="fade-up">
           <div className="contact-section-wrapper container">
             <div className="contact-left">
                 <h4>Kære kunde</h4>

@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const MenuCard = () => {
     const [menuItem, setMenuItem] = useState([]);
@@ -9,7 +11,9 @@ const MenuCard = () => {
             .then(response => {
                 console.log(response)
                 setMenuItem(response)
-            })
+            });
+        
+        AOS.init();
     }, [])
 
     return (
@@ -17,7 +21,7 @@ const MenuCard = () => {
         {
             menuItem.map((item, index) => (
                 
-                    <div key={index} className='menu-container-wrapper'>
+                    <div key={index} className='menu-container-wrapper' data-aos="zoom-out-down">
                         
                         <img src={item.image} alt="Courses" className="menu-img" />
 

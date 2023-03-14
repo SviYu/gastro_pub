@@ -21,6 +21,10 @@
 .navbar-logo{
     width: 3rem;
     height: 3rem;
+    cursor: pointer;
+}
+.navbar-logo:hover{
+    cursor: pointer;
 }
 .navbar-logo g{
     fill: #fff;
@@ -57,6 +61,7 @@
     text-align: center;
     padding: 1rem 0;
     position: relative;
+    cursor: pointer;
 }
 .nav-toggle-btn {
     background: transparent;
@@ -104,15 +109,18 @@
     top: 0;
     left: 0;
     display: grid;
-    place-content: center;
+    place-items: center;
     color: #fff;
 }
 .booking-form{
+    width: 90%;
+    max-width: 60rem;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     position: relative;
     background-color: var(--color-light-bg);
-    padding: 2rem;
+    padding: 5rem 3rem;
 }
 .booking-form svg{
     position: absolute;
@@ -139,8 +147,7 @@ textarea{
     color: #fff;
     padding: 1rem;
     margin-bottom: 1.5rem;
-    min-width: 30rem;
-    max-width: 60rem;
+    width: 100%;
     font-family: inherit;
     resize: none;
 }
@@ -171,6 +178,7 @@ textarea{
         display: flex;
         align-items: center;
         margin: 0 1rem;
+        cursor: pointer;
     }
     .sub-nav-links{
         position: absolute;

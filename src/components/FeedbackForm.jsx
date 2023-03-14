@@ -42,7 +42,7 @@ const FeedbackForm = () => {
     }
 
   return (
-      <div className='feedback-form-container'>
+    <div className='feedback-form-container' data-aos="zoom-out-down">
           <h2 className='feedback-form-container-title'>Fortæl os om dit besøg</h2>
           <form className='contact-form feedback-form' method='post' onSubmit={handleSubmit(submitFdbForm)}>
                 <input type="text" placeholder='➢  Navn*'

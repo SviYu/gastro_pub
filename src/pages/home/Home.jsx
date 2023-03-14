@@ -1,15 +1,19 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import FrontPageSection from '../../components/FrontPageSection'
 import waiterImg from '../../images/mainSite-waiter.jpg'
 import foodImg from '../../images/mainSite-food.jpg'
 import interiorImg from '../../images/mainSite-interior.jpg'
 import { BsChevronUp } from 'react-icons/bs'
 import './home.css'
+import useScrollSnap from 'react-use-scroll-snap'
 
 const Home = () => {
+  const scrollRef = useRef(null);
+  useScrollSnap({ ref: scrollRef, duration: 100, delay: 50 });
+
   return (
-    <main className='front-page'>
-      <div className="front-page-overlay"></div>
+    <main className='front-page' ref={scrollRef}>
+      {/* <div className="front-page-overlay"></div> */}
       <FrontPageSection img={waiterImg} title="GastroPub" link="/om-gastropub" linkTitle="Om Os">
         Uanset om du skal have en forretningsfrokost, en romantisk middag ved levende lys eller bare en drink efter en travl dag, vil GastroPub altid imødekomme dine behov.
       </FrontPageSection>

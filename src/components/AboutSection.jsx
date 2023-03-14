@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { GoQuote } from 'react-icons/go'
 import imageOne from '../images/Contact-bg.jpg'
 import imageTwo from '../images/about-interior.jpg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const AboutSection = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
   return (
       <section className='about-section container'>
-          <div className="about-left">
+          <div className="about-left" data-aos="fade-in">
               <p className='about-left-text'>
                   Hos Gastropub lægger vi stor vægt på frisk mad komponeret fra bunden med sæsonens råvarer. I restauranten serveres der krogmodnet kød. I køkkenet bruger vi den moderne inspiration i en sammenblanding med det klassiske køkken, når vi anretter tallerknerne.
               </p>
@@ -29,10 +34,10 @@ const AboutSection = () => {
           <div className="about-right">
               
             <div className="about-right-image">
-                <img className='about-right-img' src={imageOne } alt="Restaurant" />
+                <img className='about-right-img' src={imageOne } data-aos="fade-in" alt="Restaurant" />
             </div>
             <div className="about-right-image">
-                <img className='about-right-img' src={imageTwo } alt="Restaurant" />
+                <img className='about-right-img' src={imageTwo } data-aos="fade-in" alt="Restaurant" />
             </div>
 
               

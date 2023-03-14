@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import roundImg from '../images/Menu-bg.jpg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const NewMenu = () => {
+  useEffect(() => {AOS.init()}, [])
+
   return (
-    <section className='news-section'>
+    <section className='news-section' data-aos="fade-in">
       <div className="news-wrapper container">
         <div className='news-img'>
           <img src={roundImg} alt="Menu dish" className='news-avatar'/>
