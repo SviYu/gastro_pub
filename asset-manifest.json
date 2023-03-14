@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gastro_pub/static/css/main.94ffa896.css",
-    "main.js": "/gastro_pub/static/js/main.dbbed8b9.js",
+    "main.js": "/gastro_pub/static/js/main.b7700610.js",
     "static/js/787.93e40b1a.chunk.js": "/gastro_pub/static/js/787.93e40b1a.chunk.js",
     "static/media/About-bg.jpg": "/gastro_pub/static/media/About-bg.1b32fe6386936c107995.jpg",
     "static/media/Team-bg.jpg": "/gastro_pub/static/media/Team-bg.bd99d5d25b025f272f7a.jpg",
@@ -27,11 +27,11 @@
     "static/media/gastro-pub.svg": "/gastro_pub/static/media/gastro-pub.437e669c4d4a3e83196d13e5470fedaf.svg",
     "index.html": "/gastro_pub/index.html",
     "main.94ffa896.css.map": "/gastro_pub/static/css/main.94ffa896.css.map",
-    "main.dbbed8b9.js.map": "/gastro_pub/static/js/main.dbbed8b9.js.map",
+    "main.b7700610.js.map": "/gastro_pub/static/js/main.b7700610.js.map",
     "787.93e40b1a.chunk.js.map": "/gastro_pub/static/js/787.93e40b1a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.94ffa896.css",
-    "static/js/main.dbbed8b9.js"
+    "static/js/main.b7700610.js"
   ]
 }
