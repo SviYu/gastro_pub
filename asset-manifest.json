@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/gastro_pub/static/css/main.94ffa896.css",
+    "main.js": "/gastro_pub/static/js/main.2def6b0b.js",
+    "static/js/787.93e40b1a.chunk.js": "/gastro_pub/static/js/787.93e40b1a.chunk.js",
+    "static/media/About-bg.jpg": "/gastro_pub/static/media/About-bg.1b32fe6386936c107995.jpg",
+    "static/media/Team-bg.jpg": "/gastro_pub/static/media/Team-bg.bd99d5d25b025f272f7a.jpg",
+    "static/media/mainSite-food.jpg": "/gastro_pub/static/media/mainSite-food.63fe709f7d5e996e51db.jpg",
+    "static/media/Galleri-bg.jpg": "/gastro_pub/static/media/Galleri-bg.4b4516d9595ea39bf248.jpg",
+    "static/media/newsHeader.jpg": "/gastro_pub/static/media/newsHeader.7b202dcfe537aae3655c.jpg",
+    "static/media/about-interior.jpg": "/gastro_pub/static/media/about-interior.2495f71b05a0047aa07b.jpg",
+    "static/media/mainSite-waiter.jpg": "/gastro_pub/static/media/mainSite-waiter.75b1e51c5107d1f2eded.jpg",
+    "static/media/Contact-bg.jpg": "/gastro_pub/static/media/Contact-bg.8c6ab8352b8010d87c48.jpg",
+    "static/media/Menu-bg.jpg": "/gastro_pub/static/media/Menu-bg.6e08c0f0bc51d2f73c82.jpg",
+    "static/media/mainSite-interior.jpg": "/gastro_pub/static/media/mainSite-interior.b9077ad7fc195aa4ef5e.jpg",
+    "static/media/galleri01.jpg": "/gastro_pub/static/media/galleri01.2bb2c688039a795e4b31.jpg",
+    "static/media/galleri05.jpg": "/gastro_pub/static/media/galleri05.168266f115dc791b84bf.jpg",
+    "static/media/galleri03.jpg": "/gastro_pub/static/media/galleri03.3b7b2484f0f3f5a48a49.jpg",
+    "static/media/galleri02.jpg": "/gastro_pub/static/media/galleri02.d394bb0103be88f64ebb.jpg",
+    "static/media/galleri07.jpg": "/gastro_pub/static/media/galleri07.d44f2a62bbe42575481f.jpg",
+    "static/media/MasterChef.jpg": "/gastro_pub/static/media/MasterChef.b5d0fc432be119c42fb3.jpg",
+    "static/media/galleri06.jpg": "/gastro_pub/static/media/galleri06.d1f3dc73e2673136ce71.jpg",
+    "static/media/galleri04.jpg": "/gastro_pub/static/media/galleri04.dc6d7cb48a464cac2942.jpg",
+    "static/media/HeadWaiter.jpg": "/gastro_pub/static/media/HeadWaiter.0081d841129589977c09.jpg",
+    "static/media/DeputyChef.jpg": "/gastro_pub/static/media/DeputyChef.fdf2bdf2014faf4d399b.jpg",
+    "static/media/Assistant.jpg": "/gastro_pub/static/media/Assistant.20b4ab65df2ff6628057.jpg",
+    "static/media/gastro-pub.svg": "/gastro_pub/static/media/gastro-pub.437e669c4d4a3e83196d13e5470fedaf.svg",
+    "index.html": "/gastro_pub/index.html",
+    "main.94ffa896.css.map": "/gastro_pub/static/css/main.94ffa896.css.map",
+    "main.2def6b0b.js.map": "/gastro_pub/static/js/main.2def6b0b.js.map",
+    "787.93e40b1a.chunk.js.map": "/gastro_pub/static/js/787.93e40b1a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94ffa896.css",
+    "static/js/main.2def6b0b.js"
+  ]
+}
