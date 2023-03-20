@@ -21,7 +21,7 @@ const MenuCard = () => {
         {
             menuItem.map((item, index) => (
                 
-                    <div key={index} className='menu-container-wrapper' data-aos="zoom-out-down">
+                    <div key={index} className='menu-container-wrapper' data-aos="fade-in">
                         
                         <img src={item.image} alt="Courses" className="menu-img" />
 

@@ -13,10 +13,10 @@
     height: 23rem;
     object-fit: cover;
     transition: var(--transition);
+    filter: saturate(60%);
 }
 .about-right-img:hover{
-    transform: scale(1.1);
-    
+    filter: saturate(1);
 }
 .about-left-text{
     font-size: 1.6rem;
@@ -28,7 +28,6 @@
     font-size: 2.5rem;
     margin: 3rem 0 1rem;
 }
-
 .quote-author{
     text-align: right;
     font-size: 1.6rem;
